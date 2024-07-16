@@ -192,7 +192,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function playAudio(audioUrl) {
         const audio = new Audio(audioUrl);
-        audio.play();
+        // FIXME: For now turn this off as it can get a bit tedious
+        // audio.play();
     }
 
     // Cache common elements
