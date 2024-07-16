@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Similar Kanji Test</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div id="api-key" style="display: none;">
+            <div class="container">
+                <div id="api-text">Please enter your read-only WaniKani API key</div>
+                <input id="api-key-input" class="input" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"></input>
+                <button id="api-key-button" class="button" disabled>Submit</button>
+            </div>
+        </div>
+        <div id="loading-screen" style="display: none;">
+            <div id="loading-text">Loading...</div>
+        </div>
+        <div class="container" id="main-content">
+            <main id="main">
+                <div id="word-container" class="word-container"></div>
+                <div id="choice-container" class="choice-container"></div>
+            </main>
+        </div>
+        <div id="button-container">
+            <div id="next-word" class="button" style="display: none;">Next</div>
+        </div>    
+        <script src="script.js"></script>
+    </body>
+</html>
